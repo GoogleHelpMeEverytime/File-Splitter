@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.text.DecimalFormat;
 
 /**
- * Classe che permette di dividere un file in più parti specificando il numero di parti
+ * Classe che permette di dividere un file in piÃ¹ parti specificando il numero di parti
  * 
  * @author Nicola Improta
  *
@@ -17,9 +17,9 @@ import java.text.DecimalFormat;
 public class OperazioneDivisioneNumeroParti extends OperazioneDivisione{
 
 	/**
-	 * Metodo che permette di dividere il file in più parti specificata il numero di parti
+	 * Metodo che permette di dividere il file in piÃ¹ parti specificata il numero di parti
 	 * 
-	 * @param fileDaDividere File che l'utente vuole dividere in una o più parti
+	 * @param fileDaDividere File che l'utente vuole dividere in una o piÃ¹ parti
 	 * @param numeroParti Numero di parti
 	 */
 	
@@ -51,7 +51,7 @@ public class OperazioneDivisioneNumeroParti extends OperazioneDivisione{
 				
 				
 				nomeNuovoFile = fileDaDividere.getName() + ".part" + (new DecimalFormat("00").format(i));
-				streamOutput = new FileOutputStream(new File("./esempi", nomeNuovoFile));
+				streamOutput = new FileOutputStream(new File(".", nomeNuovoFile));
 				streamOutput.write(bytesParte);
 				streamOutput.flush();
 				streamOutput.close();
