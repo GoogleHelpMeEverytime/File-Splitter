@@ -11,7 +11,7 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
 /**
- * Classe che permette di dividere un file in più parti specificando la dimensione di ogni parte
+ * Classe che permette di dividere un file in piÃ¹ parti specificando la dimensione di ogni parte
  * e comprimendo il contenuto di ogni parte
  * 
  * @author Nicola Improta
@@ -23,7 +23,7 @@ public class OperazioneDivisioneDimensioneComprimi extends OperazioneDivisione{
 	/**
 	 * Metodo che permette di comprimere il contenuto di ogni parte 
 	 * 
-	 * @param fileDaDividere File che l'utente vuole dividere in una o più parti
+	 * @param fileDaDividere File che l'utente vuole dividere in una o piÃ¹ parti
 	 * @param dimensione Dimensione di ogni parte
 	 */
 	
@@ -38,10 +38,10 @@ public class OperazioneDivisioneDimensioneComprimi extends OperazioneDivisione{
 		
 		int letti;
 		ZipEntry entry;
-		File f = new File("./esempi");
+		File f = new File(".");
 
 
-		//Divisione in più parti data la dimensione
+		//Divisione in piÃ¹ parti data la dimensione
 		DividiFileDimensione(fileDaDividere, dimensione);
 
 		File[] partiFile;
@@ -50,7 +50,7 @@ public class OperazioneDivisioneDimensioneComprimi extends OperazioneDivisione{
 			@Override
 			public boolean accept(File dir, String name) {
 				// TODO Auto-generated method stub
-				dir = new File("./esempi");
+				dir = new File(".");
 				return name.contains(fileDaDividere.getName().concat(".partZip"));
 			}
 		};
@@ -61,7 +61,7 @@ public class OperazioneDivisioneDimensioneComprimi extends OperazioneDivisione{
 		for (File el : partiFile) {
 			try {
 
-				streamOutput = new FileOutputStream( "./esempi/" + el.getName() + ".zip");
+				streamOutput = new FileOutputStream( "." + el.getName() + ".zip");
 				zipStream = new ZipOutputStream(streamOutput);
 				streamInput = new FileInputStream(el);
 				entry = new ZipEntry(el.getName());
@@ -94,9 +94,9 @@ public class OperazioneDivisioneDimensioneComprimi extends OperazioneDivisione{
 	}
 	
 	/**
-	 * Metodo che permette di dividere il file in più parti specificata la dimensione
+	 * Metodo che permette di dividere il file in piÃ¹ parti specificata la dimensione
 	 * 
-	 * @param fileDaDividere File che l'utente vuole dividere in una o più parti
+	 * @param fileDaDividere File che l'utente vuole dividere in una o piÃ¹ parti
 	 * @param dimensione Dimensione di ogni parte
 	 */
 	
