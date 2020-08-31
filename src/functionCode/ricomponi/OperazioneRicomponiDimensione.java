@@ -15,7 +15,7 @@ import functionCode.divisione.OperazioneDivisioneDimensione;
 public class OperazioneRicomponiDimensione extends OperazioneRicomponi{
 
 	/**
-	 * Metodo che permette di ricomporre un file che è stato diviso con l' {@link OperazioneDivisioneDimensione}
+	 * Metodo che permette di ricomporre un file che Ã¨ stato diviso con l' {@link OperazioneDivisioneDimensione}
 	 * 
 	 * @param fileDaRicomporre File scelto dal utente e rappresentante una delle parti del file precedentemente diviso 
 	 */
@@ -31,7 +31,7 @@ public class OperazioneRicomponiDimensione extends OperazioneRicomponi{
 		
 		File nomeFile = new File(fileDaRicomporre.getName().substring(0, fileDaRicomporre.getName().length()-10));
 		
-		@SuppressWarnings("unused")
+		
 		int numeroByteLetti = 0;
 		
 		byte[] bytesFile;
