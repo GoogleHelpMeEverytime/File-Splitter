@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"functionCode"},{"l":"functionCode.divisione"},{"l":"functionCode.elementi"},{"l":"functionCode.ricomponi"},{"l":"gui"},{"l":"gui.panels"},{"l":"gui.panels.componenti"},{"l":"gui.panels.opzioni"},{"l":"main"}]
