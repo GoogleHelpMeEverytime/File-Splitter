@@ -9,7 +9,7 @@ import javax.crypto.spec.SecretKeySpec;
 import java.security.*;
 
 /**
- * Classe che permette di dividere un file in più parti specificando la dimensione di ogni parte
+ * Classe che permette di dividere un file in piÃ¹ parti specificando la dimensione di ogni parte
  * e criptando il contenuto di ogni parte
  * 
  * @author Nicola Improta
@@ -19,10 +19,10 @@ import java.security.*;
 public class OperazioneDivisioneDimensioneCripta extends OperazioneDivisione{
 
 	/**
-	 * Metodo che permette di dividere il file in più parti specificata la dimensione
+	 * Metodo che permette di dividere il file in piÃ¹ parti specificata la dimensione
 	 * e criptando il contenuto di ogni parte
 	 * 
-	 * @param fileDaDividere File che l'utente vuole dividere in una o più parti
+	 * @param fileDaDividere File che l'utente vuole dividere in una o piÃ¹ parti
 	 * @param dimensione Dimensione di ogni parte
 	 */
 	
@@ -69,7 +69,7 @@ public class OperazioneDivisioneDimensioneCripta extends OperazioneDivisione{
 				numeroParti++;
 				
 				nomeNuovoFile = fileDaDividere.getName() + ".crypt" + (new DecimalFormat("00").format(numeroParti - 1));
-				streamOutput = new FileOutputStream(new File("./esempi", nomeNuovoFile));
+				streamOutput = new FileOutputStream(new File(".", nomeNuovoFile));
 				
 				byte[] byteCriptati = chiper.doFinal(bytesParte);
 				
