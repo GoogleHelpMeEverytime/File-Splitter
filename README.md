@@ -13,10 +13,7 @@ Una volta scelta una delle parti del file che si vuole ricomporre il programma r
 
 ### Idea:
 Tale progetto è stato assegnato agli studenti del Corso di Laurea in Informatica dell'Università degli Studi di Modena e Reggio Emilia per il corso di Programmazione ad Oggetti.
-La traccia origianale [è disponibile qui](http://didattica.agentgroup.unimore.it/wiki/images/4/48/Tesina1920.pdf)
-
-
-
+La traccia origianale [è disponibile qui.](http://didattica.agentgroup.unimore.it/wiki/images/4/48/Tesina1920.pdf)
 
 # Installazione
 ### Clone repository
