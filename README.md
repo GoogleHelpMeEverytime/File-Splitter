@@ -6,6 +6,7 @@ Uno strumento utile che da la possibilità di dividere, uno o più, file in part
 2. Divisione del file in più parti specificando il numero di parti;
 3. Divisione del file in più parti specificando la dimensione di ogni parte e comprimendo il contenuto di ogni parte;
 4. Divisione del file in più parti specificando la dimensione di ogni parte e criptando il contenuto di ogni parte.
+
 In base al metodo di divisione scelto le parti del file avranno una specifica estensione.
 
 ### Ricomposizione del file:
