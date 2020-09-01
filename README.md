@@ -11,6 +11,12 @@ In base al metodo di divisione scelto le parti del file avranno una specifica es
 ### Ricomposizione del file:
 Una volta scelta una delle parti del file che si vuole ricomporre il programma riesce a riconoscere quale metodo di divisione è stato usato in precedenza, mediante l'estensione, e lo ricompone con un metodo di ricomposizione specifico.
 
+### Idea:
+Tale progetto è stato assegnato agli studenti del Corso di Laurea in Informatica dell'Università degli Studi di Modena e Reggio Emilia per il corso di Programmazione ad Oggetti.
+La traccia origianale [è disponibile qui](http://didattica.agentgroup.unimore.it/wiki/index.php/Programmazione_ad_Oggetti#Modalit.C3.A0_di_Sviluppo_del_Progetto_Java)
+
+
+
 
 # Installazione
 ### Clone repository
