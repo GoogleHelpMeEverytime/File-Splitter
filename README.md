@@ -21,3 +21,7 @@ La traccia origianale [è disponibile qui.](http://didattica.agentgroup.unimore.
 ```console
 $ git clone https://github.com/GoogleHelpMeEverytime/File-Splitter.git
 ```
+### Open program
+```console
+$ java -jar File-Splitter.jar
+```
